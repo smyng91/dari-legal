@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dari 隐私政策</title>
+<style>
+  :root { color-scheme: light dark; --text: #1d1d1f; --dim: #5f6368; --bg: #ffffff; --line: #e3e3e6; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #ececef; --dim: #a3a3aa; --bg: #121214; --line: #2c2c31; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  .lang { margin: 0 0 16px; font-size: 0.9rem; text-align: right; color: var(--dim); }
+  h1 + p { color: var(--dim); margin-top: 0; }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang"><a href="privacy.html" hreflang="en" lang="en">English</a> · <a href="privacy.ko.html" hreflang="ko" lang="ko">한국어</a> · <a href="privacy.es.html" hreflang="es" lang="es">Español</a></nav>
+<h1>Dari 隐私政策</h1>
+<p>生效日期：2026-11-21 · 版本：6</p>
+<p>本文是英文原文的中文译本，仅为方便您阅读而提供。如本译本与英文版本有任何不一致之处，以英文版本为准。</p>
+<p>Dari 是由 Sam Yang（“我们”）开发的聊天应用。本政策说明您使用本应用时，您的信息会如何处理。</p>
+<p>简而言之：<strong>Dari 没有服务器，也没有用户账户。</strong>您的聊天记录保留在您的设备上。您发送给 AI 模型的内容会使用您自己的 API 密钥，直接从您的设备发送到您选择的服务，我们不会收到这些内容。</p>
+<h2>1. 我们是谁</h2>
+<p>Sam Yang 对本应用负责。如有隐私方面的疑问、请求或投诉，请发送电子邮件至 smyng91@gmail.com。我们同时担任本应用的个人信息保护负责人。</p>
+<h2>2. 保留在您设备上的内容</h2>
+<ul>
+  <li>您的聊天：消息、您附加的照片和文件（PDF、文档、电子表格、文本）、应用为您生成的图片，以及随回答显示的网页来源和地点。</li>
+  <li>您的主题（及其指令和知识）、您的长期记忆、您的设置以及用量统计。</li>
+  <li>您的 API 密钥，保存在系统的安全存储中（iOS 钥匙串或 Android Keystore）。</li>
+  <li>您所连接账户的登录信息（“设置 → 账户”），保存在同一安全存储中；Google 的登录信息保存在您设备上的 Google 登录软件中。</li>
+</ul>
+<p>我们无法看到其中任何内容。这些内容不会包含在 iCloud、Google 或电脑备份中，也不会转移到新设备。</p>
+<h2>3. 哪些内容会离开您的设备，以及发送给谁</h2>
+<p>只有在您使用需要某项服务的功能时，Dari 才会向该服务发送数据；只会发送给您已添加 API 密钥的服务（Apple Maps 则须由您开启）；并且始终通过加密连接（HTTPS）发送：</p>
+<ul>
+  <li><strong>Anthropic (Claude)</strong>，总部位于美国。当 Claude 模型回答、选择路由或撰写摘要和记忆时：所发送的消息、最近的对话及其摘要、附加的照片和文件、主题的指令和知识、长期记忆、针对该消息的网页或地点搜索结果，以及设备当前的日期、时间和时区（以便模型推算“明天”这类日期）。隐私政策：<a href="https://www.anthropic.com/legal/privacy" rel="noopener">https://www.anthropic.com/legal/privacy</a></li>
+  <li><strong>OpenAI (GPT and image generation)</strong>，总部位于美国。使用 GPT 模型时：与 Claude 相同。生成或编辑图片时：图片请求以及要编辑的图片。Dari 会要求 OpenAI 不存储对话（store: false）。隐私政策：<a href="https://openai.com/policies/privacy-policy/" rel="noopener">https://openai.com/policies/privacy-policy/</a></li>
+  <li><strong>DeepSeek</strong>，总部位于中华人民共和国。使用 DeepSeek 模型时：与 Claude 相同。DeepSeek 的隐私政策称，其将数据存储在中华人民共和国。隐私政策：<a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" rel="noopener">https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html</a></li>
+  <li><strong>Google (Gemini)</strong>，总部位于美国。使用 Gemini 模型时：与 Claude 相同。如果使用免费的 Gemini API 密钥（未开通结算），根据 Google 的条款，Google 可以使用发送的内容来改进其产品，人工审核员也可能会阅读这些内容。如果该密钥所属的 Google Cloud 项目已开通结算，Google 表示不会将提示词和回答用于上述用途，并且只会为检测滥用行为而在有限时间内保留它们。隐私政策：<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+  <li><strong>Tavily (web search)</strong>，总部位于美国。当模型通过 Tavily 搜索网页时：根据消息内容生成的搜索查询。隐私政策：<a href="https://www.tavily.com/privacy" rel="noopener">https://www.tavily.com/privacy</a></li>
+  <li><strong>Google (Maps and places)</strong>，总部位于美国。当模型搜索地点时：根据消息内容生成的地点搜索词，以及用于加载详情和照片的地点 ID。开启“用我的位置查找附近地点”后，还包括大致位置（精度约为 1 公里）。Google 可能会根据 IP 地址显示附近的地点。隐私政策：<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+  <li><strong>Apple (Apple Maps)</strong>，总部位于美国。仅限 iPhone，且仅在开启“用 Apple Maps 查找地点”并且未设置 Google Maps 密钥时：根据消息内容生成的地点搜索词；用于再次显示地点的 Apple 地点 ID；以及对所显示地点的“四处看看”（Look Around）图像请求。开启“用我的位置查找附近地点”后，还包括大致位置（精度约为 1 公里）。隐私政策：<a href="https://www.apple.com/legal/privacy/" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+<p>由于您使用的是自己的 API 密钥，您是各项服务的客户，各项服务收到的内容适用其自身的隐私政策和数据保留规定。我们不会获得副本。服务可能会按照其政策所述，在其总部所在国家/地区以外的地方处理数据。</p>
+<p>如果您在“设置 → 高级”中设置了自己的服务器地址，请求将改为发送到该服务器，并由其运营者（通常是您本人）决定如何处理这些请求。</p>
+<p><strong>由您决定。</strong>添加密钥即表示您允许 Dari 向该服务发送数据；在您保存之前，应用会说明将发送哪些内容。如需停止，请在“设置 → API 密钥”中移除该密钥。Apple Maps 只有在您允许后才会使用，您可以在“设置 → 地点”中将其关闭。此后，需要该服务的功能将无法使用。</p>
+<p><strong>已连接的账户。</strong>如果您在“设置 → 账户”中连接 Gmail 和 Google 日历、Outlook 邮件和日历或 Microsoft Teams，Dari 会在您的设备上登录 Google 或 Microsoft，并将登录信息保存在系统的安全存储中。当您询问邮件、日历或聊天时，回答的 AI 模型可以让应用搜索和阅读它们：应用从 Google 或 Microsoft 获取邮件、日程或聊天消息，并将读取的内容作为对话的一部分发送给回答该消息的 AI 服务。DeepSeek 无法读取您的账户，但其中已进入聊天的文本会随该聊天发送给之后回答的服务。邮件、日程和 Teams 消息只有在您点按卡片上的“发送”时才会发送，卡片会准确显示将要发送的内容。我们不会收到其中任何内容。Dari 对从 Google API 获得的信息的使用和传输遵守 Google API 服务用户数据政策，包括“有限使用”要求：这些信息仅用于在应用中回答您的请求，绝不用于广告，也绝不用于训练 AI 模型。AI 服务可以如何处理收到的内容由其自身条款决定（某些免费 API 方案允许服务将其用于改进模型）。如需停止，请在“设置 → 账户”中断开该账户；您也可以在 Google 或 Microsoft 账户设置中撤销访问权限。</p>
+<h2>4. 您发送给我们的举报</h2>
+<p>如果您举报某条回答，Dari 会向我们发送该回答的文本、您提供的原因和备注、模型名称、应用版本以及平台（iOS 或 Android）。只有在您选择附上时，才会包含您的问题。我们利用举报来发现并减少有害回答。我们最多保留举报 12 个月；如您要求，我们会提前删除。如果举报改为通过电子邮件发送，我们还会看到您的电子邮件地址。</p>
+<h2>5. 我们不做的事</h2>
+<ul>
+  <li>我们不进行任何分析、广告、跟踪或崩溃报告，也不会为广告目的出售或共享您的数据。</li>
+  <li>只有当您在“设置 → 地点”中开启“用我的位置查找附近地点”并予以允许时，应用才会读取您的位置。届时，应用会向系统请求您的大致位置，将其精度降低到约 1 公里，并且只随地点搜索一起发送。您可以在该处或系统设置中将其关闭。地图服务也可能根据您的 IP 地址估算您所在的区域。</li>
+  <li>当回答涉及购买商品时，您的设备会直接从相关网站打开网页搜索返回的商店和评测页面，随后加载商品图片，以显示带有价格和评分的商品卡片。与您访问的任何网页一样，这些网站会看到您的 IP 地址和所请求的页面；应用不会向它们发送您聊天中的任何内容。</li>
+  <li>只有在您拍摄或选择照片时，才会使用相机和照片。照片中的位置信息（EXIF）会在存储或发送之前被移除。</li>
+  <li>在打开其他应用之前，您可以编辑建议的日程、联系人、通话、电子邮件或消息。如果您允许 Dari 为您打开应用（回答首次建议此类操作时会询问您，您也可以在“设置 → 设备操作”中更改），回答一到达，目标应用就会打开并填好建议的详情。如果您在系统联系人选择器中选择收件人，Dari 只会收到您所选的电话号码或电子邮件地址。该信息仅保留在临时草稿中，不会包含在聊天记录和 AI 请求中。目标应用打开时，会收到草稿中的信息，这些信息适用该应用的隐私政策。发送、保存或拨打电话需由您在该应用中确认。为此，Dari 不会请求访问手机的通讯录、日历或信息；Dari 只通过您连接的账户（第 3 节）读取收件箱或日历。Android 以及 iOS 17 或更高版本可以直接打开日历编辑器。较早的 iOS 版本会提供分享日程详情的选项。</li>
+  <li>只有在您通过系统文件选择器选择文件时，应用才会读取文件。文件的文本在您的设备上读取；PDF 会原样发送，其他文件则以文本形式发送给回答该消息的 AI 服务。为了让模型能够继续使用该文件，之后在该聊天中发送的每条消息都会再次附带该文件，直到有更新的文件取而代之，或该文件移出模型所能看到的对话范围。</li>
+</ul>
+<h2>6. 数据保留期限及删除方式</h2>
+<ul>
+  <li><strong>在您的设备上</strong>：保留至您删除为止。您可以删除单条消息（长按该消息）、聊天、主题或记忆；可在“设置 → 存储 → 删除所有聊天”中一次性删除所有聊天；也可在“设置 → API 密钥”中移除各个 API 密钥。卸载应用会删除其数据。在 iOS 上，卸载后系统仍会将 API 密钥保留在钥匙串中，其他应用无法读取；如果再次安装 Dari，Dari 会将其清除。如需立即删除，请在卸载前于“设置 → API 密钥”中移除它们。如需断开账户，请使用“设置 → 账户”。</li>
+  <li><strong>在各项服务处</strong>：按照其隐私政策所述处理。如需询问某项服务所保存的数据，请通过上方链接联系该服务。</li>
+  <li><strong>举报</strong>：最多保留 12 个月，详见第 4 节。</li>
+</ul>
+<h2>7. 安全</h2>
+<p>连接均经过加密。API 密钥保存在系统的安全存储中，绝不会写入文件或日志。应用文件不包含在备份中，并且在 iOS 上，设备锁定期间会被加密。已删除的消息会被覆盖。没有任何方法是绝对安全的：在已 root 或越狱的设备上，其他软件可能能够读取应用数据。</p>
+<h2>8. 儿童</h2>
+<p>Dari 不面向未满 18 周岁的任何人，我们也不会在知情的情况下接收儿童的信息。</p>
+<h2>9. 您的权利</h2>
+<p>根据您所在地的法律（例如欧盟《通用数据保护条例》（GDPR）、英国 GDPR、《加利福尼亚州消费者隐私法》或韩国《个人信息保护法》），您可能有权访问、更正或删除您的信息，反对或限制对其的使用，并向数据保护机构投诉。除了您发送的举报之外，我们不持有任何关于您的信息，因此您可以直接在应用中行使大部分权利。关于举报，请发送电子邮件与我们联系。关于某项服务所保存的数据，请联系该服务。</p>
+<h2>10. 向其他国家/地区传输</h2>
+<p>当您使用某项服务时，您的数据会在您发送的那一刻从您的设备传输到该服务。Anthropic、OpenAI、Tavily、Google 和 Apple 的总部位于美国；DeepSeek 的总部位于中华人民共和国，并表示其将数据存储在中国境内。各项服务也可能按照其政策所述在其他国家/地区处理数据。传输的目的是回应您的请求，各项服务会按照其自身政策保留数据。您可以不添加该服务的密钥，或移除已添加的密钥，以拒绝传输。</p>
+<h2>11. 变更</h2>
+<p>当我们更改本政策时，会更新上方的日期和版本。对于与您相关的重要变更，应用会请您重新阅读并接受本政策。</p>
+<h2>12. 联系方式</h2>
+<p>Sam Yang · smyng91@gmail.com</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de Dari</title>
+<style>
+  :root { color-scheme: light dark; --text: #1d1d1f; --dim: #5f6368; --bg: #ffffff; --line: #e3e3e6; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #ececef; --dim: #a3a3aa; --bg: #121214; --line: #2c2c31; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  .lang { margin: 0 0 16px; font-size: 0.9rem; text-align: right; color: var(--dim); }
+  h1 + p { color: var(--dim); margin-top: 0; }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang"><a href="privacy.html" hreflang="en" lang="en">English</a> · <a href="privacy.ko.html" hreflang="ko" lang="ko">한국어</a> · <a href="privacy.zh.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></nav>
+<h1>Política de privacidad de Dari</h1>
+<p>Vigente desde el 2026-11-21 · Versión 6</p>
+<p>Esta es una traducción del original en inglés que se ofrece solo para tu comodidad. Si esta traducción y la versión en inglés difieren, prevalece la versión en inglés.</p>
+<p>Dari es una app de chat creada por Sam Yang (“nosotros”). Esta política explica qué ocurre con tu información cuando la usas.</p>
+<p>En resumen: <strong>Dari no tiene servidores ni cuentas de usuario.</strong> Tus chats se quedan en tu dispositivo. Lo que envías a un modelo de IA va directamente de tu dispositivo al servicio que elegiste, con tu propia clave de API. Nosotros no lo recibimos.</p>
+<h2>1. Quiénes somos</h2>
+<p>Sam Yang es responsable de la app. Para preguntas, solicitudes o reclamaciones sobre privacidad, escribe a smyng91@gmail.com. También somos el punto de contacto para cualquier asunto de privacidad de la app.</p>
+<h2>2. Lo que se queda en tu dispositivo</h2>
+<ul>
+  <li>Tus chats: los mensajes, las fotos y archivos que adjuntas (PDF, documentos, hojas de cálculo, texto), las imágenes que la app crea para ti, y las fuentes web y los lugares que se muestran con una respuesta.</li>
+  <li>Tus temas (sus instrucciones y conocimiento), tus recuerdos a largo plazo, tus ajustes y las estadísticas de uso.</li>
+  <li>Tus claves de API, en el almacenamiento seguro del sistema (el llavero de iOS o el Android Keystore).</li>
+  <li>Los inicios de sesión de las cuentas que conectas (Ajustes → Cuentas), en el mismo almacenamiento seguro o, en el caso de Google, en el software de inicio de sesión de Google de tu dispositivo.</li>
+</ul>
+<p>No podemos ver nada de esto. Estos datos no se incluyen en las copias de seguridad de iCloud, de Google ni de la computadora, y no pasan a un dispositivo nuevo.</p>
+<h2>3. Lo que sale de tu dispositivo, y a quién</h2>
+<p>Dari envía datos a un servicio solo cuando usas una función que lo necesita, solo a los servicios cuya clave de API añadiste (o, en el caso de Apple Maps, que activaste), y siempre a través de una conexión cifrada (HTTPS):</p>
+<ul>
+  <li><strong>Anthropic (Claude)</strong>, con sede en Estados Unidos. Cuando un modelo de Claude responde, elige una ruta o escribe un resumen o un recuerdo: tu mensaje, la conversación reciente y su resumen, las fotos y archivos que adjuntas, las instrucciones y el conocimiento del tema, tus recuerdos a largo plazo, los resultados web o de lugares para el mensaje, y la fecha, la hora y la zona horaria actuales de tu dispositivo (para que el modelo pueda interpretar fechas como “mañana”). Política de privacidad: <a href="https://www.anthropic.com/legal/privacy" rel="noopener">https://www.anthropic.com/legal/privacy</a></li>
+  <li><strong>OpenAI (GPT and image generation)</strong>, con sede en Estados Unidos. Cuando se usa un modelo GPT: lo mismo que para Claude. Cuando creas o editas una imagen: tu solicitud y las imágenes que se van a editar. Dari pide a OpenAI que no guarde las conversaciones (store: false). Política de privacidad: <a href="https://openai.com/policies/privacy-policy/" rel="noopener">https://openai.com/policies/privacy-policy/</a></li>
+  <li><strong>DeepSeek</strong>, con sede en la República Popular China. Cuando se usa un modelo de DeepSeek: lo mismo que para Claude. La política de privacidad de DeepSeek indica que almacena los datos en la República Popular China. Política de privacidad: <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" rel="noopener">https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html</a></li>
+  <li><strong>Google (Gemini)</strong>, con sede en Estados Unidos. Cuando se usa un modelo de Gemini: lo mismo que para Claude. Con una clave de API de Gemini gratuita (sin facturación), los términos de Google permiten que Google use lo que se envía para mejorar sus productos, y es posible que lo lean revisores humanos. Si la facturación está activada en el proyecto de Google Cloud de la clave, Google afirma que no usa los prompts ni las respuestas para ese fin y que solo los conserva durante un tiempo limitado para detectar abusos. Política de privacidad: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+  <li><strong>Tavily (web search)</strong>, con sede en Estados Unidos. Cuando un modelo busca en la web a través de Tavily: la consulta de búsqueda, redactada a partir de tu mensaje. Política de privacidad: <a href="https://www.tavily.com/privacy" rel="noopener">https://www.tavily.com/privacy</a></li>
+  <li><strong>Google (Maps and places)</strong>, con sede en Estados Unidos. Cuando un modelo busca lugares: la búsqueda de lugares, redactada a partir de tu mensaje, y los ID de lugar, para cargar detalles y fotos. Con los lugares cercanos activados, tu ubicación aproximada (redondeada a 1 km aproximadamente). Google puede usar tu dirección IP para mostrarte lugares cercanos. Política de privacidad: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></li>
+  <li><strong>Apple (Apple Maps)</strong>, con sede en Estados Unidos. Solo en iPhone, cuando activas Apple Maps para los lugares y no tienes una clave de Google Maps: la búsqueda de lugares, redactada a partir de tu mensaje; los Apple Place ID, para volver a mostrar los lugares; y las solicitudes de imágenes de Look Around de los lugares mostrados. Con los lugares cercanos activados, tu ubicación aproximada (redondeada a 1 km aproximadamente). Política de privacidad: <a href="https://www.apple.com/legal/privacy/" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+<p>Como usas tu propia clave de API, eres cliente de cada servicio, y a lo que recibe se aplican su política de privacidad y sus plazos de conservación de datos. Nosotros no recibimos copias. Un servicio puede tratar los datos en países distintos de aquel en el que tiene su sede, según lo describa su política.</p>
+<p>Si configuras tu propia dirección de servidor en Ajustes → Avanzado, las solicitudes se envían a ese servidor, y su operador (normalmente tú) decide qué ocurre con ellas.</p>
+<p><strong>Tú decides.</strong> Añadir una clave es tu permiso para que Dari envíe datos a ese servicio; la app te explica qué se enviará antes de que la guardes. Para dejar de enviarlos, quita la clave en Ajustes → Claves de API. Apple Maps solo se usa después de que lo permitas, y puedes desactivarlo en Ajustes → Lugares. Las funciones que necesitan el servicio dejan entonces de funcionar.</p>
+<p><strong>Cuentas conectadas.</strong> Si conectas Gmail y Google Calendar, el correo y el calendario de Outlook o Microsoft Teams en Ajustes → Cuentas, Dari inicia sesión en Google o Microsoft desde tu dispositivo y guarda el inicio de sesión en el almacenamiento seguro del sistema. Cuando preguntas por tu correo, tu calendario o tus chats, el modelo de IA que responde puede hacer que la app los busque y los lea: la app obtiene los mensajes, eventos o mensajes de chat de Google o Microsoft y envía lo leído, como parte de la conversación, al servicio de IA que responde ese mensaje. DeepSeek no puede leer tus cuentas, pero el texto de ellas que ya está en un chat se envía con ese chat al servicio que responda después. Los correos, eventos y mensajes de Teams solo se envían cuando tocas Enviar en una tarjeta que muestra exactamente lo que se enviará. Nosotros no recibimos nada de esto. El uso y la transferencia por parte de Dari de la información recibida de las API de Google cumplen la Política de datos del usuario de los servicios de API de Google, incluidos los requisitos de Uso limitado: solo se usa para responder tus solicitudes en la app, nunca para publicidad ni para entrenar modelos de IA. Lo que un servicio de IA puede hacer con lo que recibe lo deciden sus propias condiciones (algunos planes gratuitos de API le permiten usarlo para mejorar sus modelos). Para dejar de usarlo, desconecta la cuenta en Ajustes → Cuentas; también puedes retirar el acceso en la configuración de tu cuenta de Google o Microsoft.</p>
+<h2>4. Reportes que nos envías</h2>
+<p>Si reportas una respuesta, Dari nos envía el texto de la respuesta, el motivo y la nota que indiques, el nombre del modelo, la versión de la app y la plataforma (iOS o Android). Tu pregunta solo se incluye si así lo eliges. Usamos los reportes para detectar y reducir las respuestas dañinas. Los conservamos hasta 12 meses y los eliminamos antes si nos lo pides. Si un reporte se envía por correo electrónico, también vemos tu dirección de correo electrónico.</p>
+<h2>5. Lo que no hacemos</h2>
+<ul>
+  <li>No usamos analítica, publicidad, rastreo ni informes de fallos, y no vendemos ni compartimos tus datos con fines publicitarios.</li>
+  <li>La app solo lee tu ubicación si activas “Usar mi ubicación para lugares cercanos” en Ajustes → Lugares y lo permites. Entonces pide al sistema tu ubicación aproximada, la redondea a 1 km aproximadamente y solo la envía con las búsquedas de lugares. Puedes desactivarlo ahí o en los ajustes del sistema. Los servicios de mapas también pueden estimar una zona a partir de tu dirección IP.</li>
+  <li>Cuando una respuesta trata sobre productos para comprar, tu dispositivo abre las páginas de tiendas y reseñas que devolvió la búsqueda web, y después las imágenes de los productos, directamente desde esos sitios web, para mostrar tarjetas de producto con precios y valoraciones. Como ocurre con cualquier página web que visitas, esos sitios ven tu dirección IP y la página solicitada; la app no les envía nada de tus chats.</li>
+  <li>La cámara y las fotos solo se usan cuando tomas o eliges una foto. Los datos de ubicación de las fotos (EXIF) se eliminan antes de guardarlas o enviarlas.</li>
+  <li>Puedes editar un evento, contacto, llamada, correo electrónico o mensaje sugerido antes de abrir otra app. Si permites que Dari abra las apps por ti (lo pregunta la primera vez que una respuesta sugiere una acción, y puedes cambiarlo en Ajustes → Acciones del dispositivo), la app de destino se abre con los datos sugeridos en cuanto llega la respuesta. Si eliges un destinatario en el selector de contactos del sistema, Dari solo recibe el número de teléfono o la dirección de correo electrónico que selecciones. Se queda en el borrador temporal y se excluye del historial del chat y de las solicitudes a la IA. Cuando se abre la app de destino, esta recibe los datos del borrador y se aplica su política de privacidad. Allí confirmas el envío, el guardado o la llamada. Para esto, Dari no solicita acceso a la agenda de contactos, el calendario ni los mensajes del teléfono; solo lee una bandeja de entrada o un calendario a través de las cuentas que conectas (sección 3). Android e iOS 17 o posterior pueden abrir directamente el editor del calendario. En versiones anteriores de iOS se ofrece compartir los detalles del evento.</li>
+  <li>Los archivos solo se leen cuando los eliges en el selector de archivos del sistema. Su texto se lee en tu dispositivo; un PDF se envía tal cual, y los demás archivos como texto, al servicio de IA que responde a ese mensaje. Un archivo se vuelve a enviar con cada mensaje posterior del chat, para que el modelo pueda seguir usándolo, hasta que archivos más recientes ocupen su lugar o quede fuera de la parte de la conversación que ve el modelo.</li>
+</ul>
+<h2>6. Cuánto tiempo se conservan los datos y cómo eliminarlos</h2>
+<ul>
+  <li><strong>En tu dispositivo:</strong> hasta que los elimines. Puedes eliminar un mensaje (mantenlo presionado), un chat, un tema o un recuerdo; todos los chats a la vez en Ajustes → Almacenamiento → Eliminar todos los chats; y quitar cada clave de API en Ajustes → Claves de API. Al desinstalar la app se eliminan sus datos. En iOS, después de desinstalar la app, el sistema conserva las claves de API en el llavero, donde ninguna otra app puede leerlas; Dari las borra si se vuelve a instalar. Para eliminarlas de inmediato, quítalas en Ajustes → Claves de API antes de desinstalar la app. Para desconectar una cuenta, usa Ajustes → Cuentas.</li>
+  <li><strong>En los servicios:</strong> según lo que describan sus políticas de privacidad. Para preguntar a un servicio por los datos que conserva, ponte en contacto con él a través de los enlaces anteriores.</li>
+  <li><strong>Reportes:</strong> hasta 12 meses, como se describe en la sección 4.</li>
+</ul>
+<h2>7. Seguridad</h2>
+<p>Las conexiones están cifradas. Las claves de API se guardan en el almacenamiento seguro del sistema y nunca se escriben en archivos ni registros. Los archivos de la app se excluyen de las copias de seguridad y, en iOS, se cifran mientras el dispositivo está bloqueado. Los mensajes eliminados se sobrescriben. Ningún método es perfectamente seguro: en un dispositivo rooteado o con jailbreak, otro software podría leer los datos de la app.</p>
+<h2>8. Menores de edad</h2>
+<p>Dari no está destinada a personas menores de 18 años, y no recibimos a sabiendas información de menores.</p>
+<h2>9. Tus derechos</h2>
+<p>Según dónde vivas (por ejemplo, en virtud del RGPD, el RGPD del Reino Unido, la Ley de Privacidad del Consumidor de California o la Ley de Protección de Información Personal de Corea), es posible que tengas derecho a acceder a tu información, corregirla o eliminarla, a oponerte a su uso o a limitarlo, y a presentar una reclamación ante una autoridad de protección de datos. No tenemos información sobre ti aparte de los reportes que nos envías, así que puedes ejercer la mayoría de estos derechos en la propia app. Para los reportes, escríbenos. Para los datos que conserva un servicio, ponte en contacto con ese servicio.</p>
+<h2>10. Transferencias a otros países</h2>
+<p>Cuando usas un servicio, tus datos viajan desde tu dispositivo hasta ese servicio en el momento en que los envías. Anthropic, OpenAI, Tavily, Google y Apple tienen su sede en Estados Unidos; DeepSeek tiene su sede en la República Popular China y afirma que almacena allí los datos. Cada servicio también puede tratar datos en otros países, según lo describa su política. La finalidad es responder a tu solicitud, y cada servicio conserva los datos según indique su propia política. Puedes rechazar una transferencia si no añades la clave de ese servicio o si la quitas.</p>
+<h2>11. Cambios</h2>
+<p>Cuando cambiemos esta política, actualizaremos la fecha y la versión indicadas arriba. Si los cambios son importantes para ti, la app te pedirá que vuelvas a leer y aceptar la política.</p>
+<h2>12. Contacto</h2>
+<p>Sam Yang · smyng91@gmail.com</p>
+</main>
+</body>
+</html>
